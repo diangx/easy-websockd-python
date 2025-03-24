@@ -8,8 +8,6 @@ PKG_MAINTAINER:=Jiwan Kim <wldhks1004@naver.com>
 include $(INCLUDE_DIR)/package.mk
 
 define Package/easy-websockd-python
-  SECTION:=Kaonbroadband
-  CATEGORY:=Kaonbroadband
   TITLE:=Easy WebSocket Python Server
   DEPENDS:=+python3-light +python3-email +python3-urllib +python3-openssl
 endef
