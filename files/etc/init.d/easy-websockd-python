@@ -1,0 +1,13 @@
+#!/bin/sh /etc/rc.common
+# easy-websockd-python init script
+
+START=99
+STOP=10
+USE_PROCD=1
+
+start_service() {
+    procd_open_instance
+    procd_set_param command python3 /sbin/server.py
+    procd_set_param respawn
+    procd_close_instance
+}
